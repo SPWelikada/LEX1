@@ -1,0 +1,722 @@
+[
+  {
+    "id": "P01",
+    "title": "Homepage",
+    "path": "/{locale}",
+    "description": "Explain LEX, show approved capabilities, and route buyers and suppliers to the appropriate next step."
+  },
+  {
+    "id": "P02",
+    "title": "Markets directory",
+    "path": "/{locale}/markets",
+    "description": "List products with clear available, simulation and planned status; provide product filters."
+  },
+  {
+    "id": "P03",
+    "title": "Product information",
+    "path": "/{locale}/markets/{productSlug}",
+    "description": "Explain eligibility, calendar, delivery, charges and rules for one published product."
+  },
+  {
+    "id": "P04",
+    "title": "Solutions directory",
+    "path": "/{locale}/solutions",
+    "description": "Present solutions for buyers, generators, intermediaries and asset operators."
+  },
+  {
+    "id": "P05",
+    "title": "Solution detail",
+    "path": "/{locale}/solutions/{solutionSlug}",
+    "description": "Describe one audience workflow and relevant capabilities with a contextual join or contact action."
+  },
+  {
+    "id": "P06",
+    "title": "How the platform works",
+    "path": "/{locale}/how-it-works",
+    "description": "Explain admission, procurement, trading and financial responsibilities in plain language."
+  },
+  {
+    "id": "P07",
+    "title": "Public market data",
+    "path": "/{locale}/data",
+    "description": "Show permitted prices and volumes with source, delay, timestamp, units and redistribution terms."
+  },
+  {
+    "id": "P08",
+    "title": "Notices directory",
+    "path": "/{locale}/notices",
+    "description": "List market, service and consultation notices with category and publication filters."
+  },
+  {
+    "id": "P09",
+    "title": "Notice detail",
+    "path": "/{locale}/notices/{noticeSlug}",
+    "description": "Show effective times, affected products, document versions and superseding notices."
+  },
+  {
+    "id": "P10",
+    "title": "Insights directory",
+    "path": "/{locale}/insights",
+    "description": "Publish approved research and education with topic, author and date metadata."
+  },
+  {
+    "id": "P11",
+    "title": "Article detail",
+    "path": "/{locale}/insights/{articleSlug}",
+    "description": "Provide one accessible article, references, related resources and editorial metadata."
+  },
+  {
+    "id": "P12",
+    "title": "Resource centre",
+    "path": "/{locale}/resources",
+    "description": "Offer published guides, training material, forms and document search."
+  },
+  {
+    "id": "P13",
+    "title": "Rulebooks and policies",
+    "path": "/{locale}/rules",
+    "description": "Publish approved rule versions, effective dates, change summaries and archived versions."
+  },
+  {
+    "id": "P14",
+    "title": "Fees and charges",
+    "path": "/{locale}/fees",
+    "description": "Show approved fee schedules and calculation examples, separating charges and taxes."
+  },
+  {
+    "id": "P15",
+    "title": "Membership information",
+    "path": "/{locale}/membership",
+    "description": "Explain participant types, evidence, application stages and eligibility before joining."
+  },
+  {
+    "id": "P16",
+    "title": "About LEX",
+    "path": "/{locale}/about",
+    "description": "Present verified company, governance, ownership and conflict-management information."
+  },
+  {
+    "id": "P17",
+    "title": "Contact and enquiries",
+    "path": "/{locale}/contact",
+    "description": "Collect a minimal enquiry, classify it and return a reference and response expectations."
+  },
+  {
+    "id": "P18",
+    "title": "Help centre",
+    "path": "/{locale}/help",
+    "description": "Search FAQs, procedural guidance and support options without exposing private cases."
+  },
+  {
+    "id": "P19",
+    "title": "Legal and accessibility pages",
+    "path": "/{locale}/legal/{policySlug}",
+    "description": "Serve privacy, terms, cookies and accessibility information with approved versions."
+  },
+  {
+    "id": "P20",
+    "title": "Service status link",
+    "path": "/{locale}/status",
+    "description": "Direct users to the independently hosted service-status property."
+  },
+  {
+    "id": "U01",
+    "title": "Sign in",
+    "path": "/sign-in",
+    "description": "Authenticate and return safely to an authorised destination; distinguish participant and staff entry."
+  },
+  {
+    "id": "U02",
+    "title": "Multi factor verification",
+    "path": "/verify",
+    "description": "Complete MFA using the identity provider and support accessible recovery choices."
+  },
+  {
+    "id": "U03",
+    "title": "Account recovery",
+    "path": "/recover",
+    "description": "Start rate-limited recovery without revealing whether another person has an account."
+  },
+  {
+    "id": "U04",
+    "title": "Create applicant account",
+    "path": "/join",
+    "description": "Choose applicant type, verify contact details and start an application."
+  },
+  {
+    "id": "U05",
+    "title": "Company application",
+    "path": "/join/company",
+    "description": "Collect company, ownership, representative, licence and bank-verification evidence in saved steps."
+  },
+  {
+    "id": "U06",
+    "title": "Membership agreements",
+    "path": "/join/agreements",
+    "description": "Review and accept the correct membership and disclosure versions with signatory evidence."
+  },
+  {
+    "id": "U07",
+    "title": "Application status",
+    "path": "/join/status",
+    "description": "Show submitted, action-required, approved or rejected status and controlled resubmission."
+  },
+  {
+    "id": "U08",
+    "title": "Workspace selection",
+    "path": "/workspaces",
+    "description": "Choose an authorised organisation and role context without mixing records between tenants."
+  },
+  {
+    "id": "U09",
+    "title": "Accept invitation",
+    "path": "/invitations/{token}",
+    "description": "Accept an expiring single-use invitation after identity verification and mandate checks."
+  },
+  {
+    "id": "U10",
+    "title": "Sensitive action verification",
+    "path": "/step-up",
+    "description": "Re-authenticate for a scoped sensitive action; bind approval to the originating request."
+  },
+  {
+    "id": "A01",
+    "title": "Role based dashboard",
+    "path": "/w/{orgId}/overview",
+    "description": "Show role-specific tasks, deadlines, exposure summaries and data freshness."
+  },
+  {
+    "id": "A02",
+    "title": "Approval inbox",
+    "path": "/w/{orgId}/approvals",
+    "description": "Review assigned tasks, compare versions and approve or reject with an evidence trail."
+  },
+  {
+    "id": "A03",
+    "title": "Organisation and membership",
+    "path": "/w/{orgId}/organisation",
+    "description": "Manage verified profile, eligibility, membership status and change requests."
+  },
+  {
+    "id": "A04",
+    "title": "People and permissions",
+    "path": "/w/{orgId}/people",
+    "description": "Invite users and assign scoped roles under approval rules; revoke access safely."
+  },
+  {
+    "id": "A05",
+    "title": "Broker clients and mandates",
+    "path": "/w/{orgId}/clients",
+    "description": "Manage client mandates and explicitly select the underlying client for scoped activity."
+  },
+  {
+    "id": "A06",
+    "title": "Security and API access",
+    "path": "/w/{orgId}/security",
+    "description": "Manage sessions, MFA and approved scoped credentials with expiry and revocation."
+  },
+  {
+    "id": "A07",
+    "title": "Document centre",
+    "path": "/w/{orgId}/documents",
+    "description": "Find permitted files, versions, signature evidence and document-specific access history."
+  },
+  {
+    "id": "A08",
+    "title": "Assets and sites",
+    "path": "/w/{orgId}/assets",
+    "description": "Register generation and consumer sites with location, limits, qualification and ownership history."
+  },
+  {
+    "id": "A09",
+    "title": "Meter registry",
+    "path": "/w/{orgId}/meters",
+    "description": "Map assets, channels, measurement intervals and provider identifiers with effective dates."
+  },
+  {
+    "id": "A10",
+    "title": "Portfolios and aggregation",
+    "path": "/w/{orgId}/portfolios",
+    "description": "Group eligible assets, customers and responsibilities with controlled allocation membership."
+  },
+  {
+    "id": "A11",
+    "title": "Availability and outages",
+    "path": "/w/{orgId}/availability",
+    "description": "Publish capability and outage revisions with affected intervals and acknowledgement."
+  },
+  {
+    "id": "A12",
+    "title": "Supply commitments",
+    "path": "/w/{orgId}/commitments",
+    "description": "Inspect contracted and traded interval rights and the remaining available position."
+  },
+  {
+    "id": "A13",
+    "title": "Buyer requirements",
+    "path": "/w/{orgId}/requirements",
+    "description": "Build a versioned demand profile and procurement specification with validation."
+  },
+  {
+    "id": "A14",
+    "title": "Tenders and invitations",
+    "path": "/w/{orgId}/tenders",
+    "description": "Publish approved requests, manage invited suppliers and track tender stages."
+  },
+  {
+    "id": "A15",
+    "title": "Supplier offer submission",
+    "path": "/w/{orgId}/offers",
+    "description": "Draft, validate, approve and submit sealed responses; retain submission receipts."
+  },
+  {
+    "id": "A16",
+    "title": "Offer comparison and shortlist",
+    "path": "/w/{orgId}/comparisons",
+    "description": "Compare equivalent delivery profiles, cost assumptions, exclusions and evaluation evidence."
+  },
+  {
+    "id": "A17",
+    "title": "Reverse auction room",
+    "path": "/w/{orgId}/reverse-auctions",
+    "description": "Show auction clock, permitted ranking, bid history and submission status."
+  },
+  {
+    "id": "A18",
+    "title": "Supplier due diligence",
+    "path": "/w/{orgId}/due-diligence",
+    "description": "Review project evidence, open questions, expiry flags and decision history."
+  },
+  {
+    "id": "A19",
+    "title": "Contracts and negotiation",
+    "path": "/w/{orgId}/contracts",
+    "description": "Manage draft versions, redlines, approvals, signatures and structured obligations."
+  },
+  {
+    "id": "A20",
+    "title": "Contract performance",
+    "path": "/w/{orgId}/performance",
+    "description": "Compare obligations, actuals and invoices; open evidenced performance exceptions."
+  },
+  {
+    "id": "A21",
+    "title": "Renewal pipeline",
+    "path": "/w/{orgId}/renewals",
+    "description": "Track notice deadlines and start replacement procurement from the current contract."
+  },
+  {
+    "id": "A22",
+    "title": "Market overview",
+    "path": "/w/{orgId}/markets",
+    "description": "Show available sessions, published prices, volumes and participant entitlements."
+  },
+  {
+    "id": "A23",
+    "title": "Product and session detail",
+    "path": "/w/{orgId}/markets/{productId}/sessions/{sessionId}",
+    "description": "Show gate times, permitted orders, pinned rules and session status."
+  },
+  {
+    "id": "A24",
+    "title": "Trading workbench",
+    "path": "/w/{orgId}/trade",
+    "description": "Combine order book or auction form, ticket, exposure, review and durable result status."
+  },
+  {
+    "id": "A25",
+    "title": "Bulk order import",
+    "path": "/w/{orgId}/order-imports",
+    "description": "Upload validated templates, preview item errors and submit with per-order receipts."
+  },
+  {
+    "id": "A26",
+    "title": "Order blotter",
+    "path": "/w/{orgId}/orders",
+    "description": "Track revisions, partial fills, pending cancellation, expiry and unknown request outcomes."
+  },
+  {
+    "id": "A27",
+    "title": "Executions and confirmations",
+    "path": "/w/{orgId}/trades",
+    "description": "Show immutable executions, counterpart disclosure policy, confirmations and correction references."
+  },
+  {
+    "id": "A28",
+    "title": "Positions and exposure",
+    "path": "/w/{orgId}/positions",
+    "description": "Show contract and trade exposure by interval with uncovered volumes and freshness."
+  },
+  {
+    "id": "A29",
+    "title": "Network access applications",
+    "path": "/w/{orgId}/network-access",
+    "description": "Submit or track access evidence and authority-issued acceptance or rejection."
+  },
+  {
+    "id": "A30",
+    "title": "Network capacity",
+    "path": "/w/{orgId}/network-capacity",
+    "description": "Display permitted capacity and constraints with source, version and validity."
+  },
+  {
+    "id": "A31",
+    "title": "Nominations and schedules",
+    "path": "/w/{orgId}/schedules",
+    "description": "Prepare, approve, submit and reconcile schedule revisions and operator receipts."
+  },
+  {
+    "id": "A32",
+    "title": "Balancing responsibility",
+    "path": "/w/{orgId}/balancing",
+    "description": "Inspect final positions, assigned responsibility and authorised deviation information."
+  },
+  {
+    "id": "A33",
+    "title": "Curtailment and redispatch",
+    "path": "/w/{orgId}/curtailments",
+    "description": "Review instructions, affected quantities, evidence and rule-based financial treatment."
+  },
+  {
+    "id": "A34",
+    "title": "Operational notices",
+    "path": "/w/{orgId}/notices",
+    "description": "Receive targeted restrictions, outages and urgent notices; acknowledge where required."
+  },
+  {
+    "id": "A35",
+    "title": "Credit limits and cover",
+    "path": "/w/{orgId}/credit",
+    "description": "Separate approved limit, held cover, unsettled exposure and genuinely available capacity."
+  },
+  {
+    "id": "A36",
+    "title": "Collateral and guarantees",
+    "path": "/w/{orgId}/collateral",
+    "description": "Track confirmed cash, guarantees, expiry, haircuts and release requests."
+  },
+  {
+    "id": "A37",
+    "title": "Margin and default notices",
+    "path": "/w/{orgId}/margin",
+    "description": "Respond to calls and restrictions with deadlines, evidence and escalation status."
+  },
+  {
+    "id": "A38",
+    "title": "Settlement statements",
+    "path": "/w/{orgId}/settlements",
+    "description": "Inspect run versions, energy, imbalance, charges and linked adjustment statements."
+  },
+  {
+    "id": "A39",
+    "title": "Meter data and quality",
+    "path": "/w/{orgId}/meter-data",
+    "description": "View interval revisions, quality flags, missing data and correction requests."
+  },
+  {
+    "id": "A40",
+    "title": "Invoices and payments",
+    "path": "/w/{orgId}/payments",
+    "description": "Distinguish due, submitted, bank-confirmed and reconciled payment states."
+  },
+  {
+    "id": "A41",
+    "title": "Customer and asset allocations",
+    "path": "/w/{orgId}/allocations",
+    "description": "Review effective allocation methods, child amounts and reconciliation to totals."
+  },
+  {
+    "id": "A42",
+    "title": "Disputes and adjustments",
+    "path": "/w/{orgId}/disputes",
+    "description": "Submit evidence within deadlines, track decisions and inspect linked corrections."
+  },
+  {
+    "id": "A43",
+    "title": "Environmental instrument market",
+    "path": "/w/{orgId}/environmental/market",
+    "description": "Browse eligible certificate or instrument products with scheme, unit and vintage."
+  },
+  {
+    "id": "A44",
+    "title": "Certificate holdings",
+    "path": "/w/{orgId}/environmental/holdings",
+    "description": "Separate available, reserved, transfer-pending and retired registry-linked holdings."
+  },
+  {
+    "id": "A45",
+    "title": "Transfers and retirement",
+    "path": "/w/{orgId}/environmental/actions",
+    "description": "Review transfer or retirement details, approve and await registry confirmation."
+  },
+  {
+    "id": "A46",
+    "title": "Renewable matching reports",
+    "path": "/w/{orgId}/environmental/matching",
+    "description": "Report matching method, period, consumption basis, beneficiary and retired evidence."
+  },
+  {
+    "id": "A47",
+    "title": "Qualified flexibility resources",
+    "path": "/w/{orgId}/flexibility/resources",
+    "description": "Register service eligibility, technical envelopes, qualification tests and availability."
+  },
+  {
+    "id": "A48",
+    "title": "Battery and VPP workspace",
+    "path": "/w/{orgId}/flexibility/portfolio",
+    "description": "Inspect state of charge, commitments and optimisation proposals with approved control limits."
+  },
+  {
+    "id": "A49",
+    "title": "Flexibility service events",
+    "path": "/w/{orgId}/flexibility/events",
+    "description": "Respond to approved demand, reserve, regulation, capacity or local-flexibility requests."
+  },
+  {
+    "id": "A50",
+    "title": "Flexibility performance",
+    "path": "/w/{orgId}/flexibility/performance",
+    "description": "Review baselines, telemetry, measured response and performance settlement."
+  },
+  {
+    "id": "A51",
+    "title": "Hedging instruments",
+    "path": "/w/{orgId}/hedging/instruments",
+    "description": "Show futures, options, swaps and congestion products with approved lifecycle terms."
+  },
+  {
+    "id": "A52",
+    "title": "Hedging positions and valuation",
+    "path": "/w/{orgId}/hedging/positions",
+    "description": "Show positions, exercise tasks, valuation inputs, margin and mismatches to physical demand."
+  },
+  {
+    "id": "A53",
+    "title": "OTC registration",
+    "path": "/w/{orgId}/hedging/registrations",
+    "description": "Submit and confirm eligible bilateral transactions under the selected registration arrangement."
+  },
+  {
+    "id": "A54",
+    "title": "Generation and demand forecasts",
+    "path": "/w/{orgId}/forecasts",
+    "description": "Inspect forecasts, uncertainty, source versions and measured forecast error."
+  },
+  {
+    "id": "A55",
+    "title": "Price and procurement scenarios",
+    "path": "/w/{orgId}/scenarios",
+    "description": "Compare versioned assumptions and strategies without submitting live orders."
+  },
+  {
+    "id": "A56",
+    "title": "Reports savings and exports",
+    "path": "/w/{orgId}/reports",
+    "description": "Generate permitted reports with baseline, achieved versus modelled results and export status."
+  },
+  {
+    "id": "A57",
+    "title": "Enterprise integrations",
+    "path": "/w/{orgId}/integrations",
+    "description": "Manage approved ERP, meter and reporting connections with scoped credentials and reconciliation."
+  },
+  {
+    "id": "A58",
+    "title": "Notification centre",
+    "path": "/w/{orgId}/notifications",
+    "description": "Inspect permitted alerts, preferences, acknowledgements and escalation state."
+  },
+  {
+    "id": "A59",
+    "title": "Support cases",
+    "path": "/w/{orgId}/support",
+    "description": "Open private cases, attach permitted evidence and track responsibility and resolution."
+  },
+  {
+    "id": "A60",
+    "title": "Training and simulation entry",
+    "path": "/w/{orgId}/training",
+    "description": "Open guides and launch an isolated simulation workspace without transferring production credentials."
+  },
+  {
+    "id": "O01",
+    "title": "Operations overview",
+    "path": "/overview",
+    "description": "Show assigned queues, incidents, market status and control-room handover."
+  },
+  {
+    "id": "O02",
+    "title": "Participant admission",
+    "path": "/participants",
+    "description": "Review company evidence, eligibility, resubmission and independently approved activation."
+  },
+  {
+    "id": "O03",
+    "title": "Asset qualification",
+    "path": "/assets",
+    "description": "Review ownership, connection evidence, technical limits and service qualification."
+  },
+  {
+    "id": "O04",
+    "title": "Products rules and fees",
+    "path": "/rules",
+    "description": "Draft, compare, approve and publish effective-dated rule and product changes."
+  },
+  {
+    "id": "O05",
+    "title": "Sessions and auction release",
+    "path": "/sessions",
+    "description": "Open or halt sessions, inspect frozen inputs, validate results and approve release."
+  },
+  {
+    "id": "O06",
+    "title": "Order and trade operations",
+    "path": "/orders",
+    "description": "Investigate request outcomes and corrections through governed commands and immutable evidence."
+  },
+  {
+    "id": "O07",
+    "title": "Network and scheduling desk",
+    "path": "/schedules",
+    "description": "Resolve rejected schedules, stale capacity, responsibility and partner acknowledgements."
+  },
+  {
+    "id": "O08",
+    "title": "Meter data exceptions",
+    "path": "/metering",
+    "description": "Review quarantined batches, quality exceptions, estimates and authorised revisions."
+  },
+  {
+    "id": "O09",
+    "title": "Credit and risk accounts",
+    "path": "/risk",
+    "description": "Assess limits and inspect reservations and exposure with maker-checker decisions."
+  },
+  {
+    "id": "O10",
+    "title": "Collateral verification",
+    "path": "/collateral",
+    "description": "Confirm eligible security and independent evidence before changing available cover."
+  },
+  {
+    "id": "O11",
+    "title": "Margin stress and default cases",
+    "path": "/risk-cases",
+    "description": "Run stress models and manage calls, restrictions and approved default procedures."
+  },
+  {
+    "id": "O12",
+    "title": "Settlement runs and approval",
+    "path": "/settlement-runs",
+    "description": "Freeze inputs, compare calculation versions, validate balance and release approved statements."
+  },
+  {
+    "id": "O13",
+    "title": "Treasury instructions",
+    "path": "/treasury",
+    "description": "Approve verified payees and scoped payment instructions; track bank evidence."
+  },
+  {
+    "id": "O14",
+    "title": "Bank reconciliation",
+    "path": "/reconciliation",
+    "description": "Match statement movements to obligations and resolve unknown or unmatched items."
+  },
+  {
+    "id": "O15",
+    "title": "Settlement disputes",
+    "path": "/disputes",
+    "description": "Investigate evidence and approve linked reruns, reversal or adjustment treatment."
+  },
+  {
+    "id": "O16",
+    "title": "Surveillance investigations",
+    "path": "/surveillance",
+    "description": "Review alerts, replay permitted evidence and document case decisions and escalations."
+  },
+  {
+    "id": "O17",
+    "title": "Related parties and conflicts",
+    "path": "/conflicts",
+    "description": "Maintain affiliation evidence, access separation and prohibited self-trade controls."
+  },
+  {
+    "id": "O18",
+    "title": "Audit and regulatory reports",
+    "path": "/audit",
+    "description": "Inspect immutable evidence, generate approved disclosures and manage legal holds."
+  },
+  {
+    "id": "O19",
+    "title": "Registry operations",
+    "path": "/registries",
+    "description": "Resolve transfer or retirement mismatches against recognised registry confirmations."
+  },
+  {
+    "id": "O20",
+    "title": "Flexibility operations",
+    "path": "/flexibility",
+    "description": "Review qualifications, operator requests, activation approvals and measured performance."
+  },
+  {
+    "id": "O21",
+    "title": "Derivative operations",
+    "path": "/derivatives",
+    "description": "Review lifecycle events, price references, valuation and authorised clearing results."
+  },
+  {
+    "id": "O22",
+    "title": "Partner integration monitoring",
+    "path": "/integrations",
+    "description": "Inspect adapter health, quarantine, partner receipts and controlled replay queues."
+  },
+  {
+    "id": "O23",
+    "title": "Security incidents and recovery",
+    "path": "/security",
+    "description": "Manage incidents, access reviews and recovery evidence through restricted operational procedures."
+  },
+  {
+    "id": "O24",
+    "title": "Support and training operations",
+    "path": "/support",
+    "description": "Handle scoped cases, training content and incident communications without unrestricted impersonation."
+  },
+  {
+    "id": "O25",
+    "title": "Public content management",
+    "path": "/content",
+    "description": "Draft and approve public pages, translations, documents and notices before publication."
+  },
+  {
+    "id": "O26",
+    "title": "Operational approval inbox",
+    "path": "/approvals",
+    "description": "Review exact versions and independently approve configuration, financial and case decisions."
+  },
+  {
+    "id": "O27",
+    "title": "Staff access",
+    "path": "/sign-in",
+    "description": "Use separate staff SSO, mandatory MFA and restricted session policy for operations access."
+  },
+  {
+    "id": "T01",
+    "title": "Service status",
+    "path": "/",
+    "description": "Independently publish component availability and maintenance without participant transaction details."
+  },
+  {
+    "id": "T02",
+    "title": "Incident and maintenance detail",
+    "path": "/incidents/{incidentId}",
+    "description": "Publish approved incident updates, timestamps, impacts and closure history."
+  },
+  {
+    "id": "X01",
+    "title": "Simulation workspace",
+    "path": "/w/{trainingOrgId}/overview",
+    "description": "Reuse permitted application templates with synthetic data, isolated identities and simulation-only actions."
+  }
+]
